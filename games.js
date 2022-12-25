@@ -87,6 +87,14 @@ const games = ` [
     "goal": 100000,
     "backers": 9264,
     "img": "./assets/kingdom_death.png"
+  },
+  {
+    "name": "The Mirror Man",
+    "description": "The horror tale of a young boy who discovers a mirror that shows him the future, but only if he does what it tells him to do.",
+    "pledged": 3012345,
+    "goal": 200000,
+    "backers": 1294,
+    "img": "./assets/maxresdefault.jpg"
   }
 ]
 `

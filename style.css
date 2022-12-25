@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #152636;
+    color: white;
 }
 
 #tentacles {
@@ -17,29 +18,42 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    color: #152636;
 }
+
 
 .stats-container {
     display: flex;
+    align-items: center;
 }
 
+
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: lightblue;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     width: 100%;
     text-align: center;
+    color:#152636;
+    transition: transform 330ms ease-out
+}
+.stats-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+    transform: scale(1.22);
+    transition: transform 330ms ease-in-out;
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 20px;
 }
 
 #games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: #152636;
 }
 
 .game-img {
@@ -55,15 +69,30 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    transition: transform 330ms ease-out;
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.22);
+    transition: transform 330ms ease-in-out;
 }
 
 #button-container {
     text-align: center;
+}
+
+#unfunded-btn, #funded-btn, #all-btn {
+    background-color: #FFFFFF;
+    color: #152636;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#unfunded-btn:hover, #funded-btn:hover, #all-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 button {
@@ -73,3 +102,4 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
